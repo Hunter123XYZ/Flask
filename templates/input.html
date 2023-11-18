@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block head %}
+{% endblock %} 
+
+{% block body %}
+<div class = "container">
+    <h1> Disease Diagnosis </h1>
+    <br/>
+    <form action = "/input" METHOD="POST">
+        <input type="text" placeholder="Name" name="name">
+        <input type="text" placeholder="Symptom1" name="s1">
+        <input type="text" placeholder="Symptom2" name="s2">
+        <input type="text" placeholder="Symptom3" name="s3">
+        <input type="submit" value = "Get Diagnosis" class = "btn btn-secondary">
+    </form>
+</div>
+
+{% endblock %} 

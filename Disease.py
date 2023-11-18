@@ -43,7 +43,6 @@ type(col)
 len(col)
 
 inputt = "itching stomach_pain skin_rash".split(' ')
-inputt
 
 b=[0]*len(col)
 for x in range(0,132):
@@ -53,4 +52,3 @@ for x in range(0,132):
 b=np.array(b)
 b=b.reshape(1,132)
 sol=clf_rf.predict(b)
-sol

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock %}
+
+{% block head %}
+{% endblock %} 
+
+{% block body %}
+<div class = "container">
+    <h1> Patients helped: </h1>
+    <br/>
+    <form action = "/predict" METHOD="POST">
+        <input type="text" placeholder="Name" name="name">
+        <input type="submit" value = "(insert button name)" class = "btn btn-secondary">
+    </form>
+</div>
+
+{% endblock %} 
